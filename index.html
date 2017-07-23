@@ -1,0 +1,684 @@
+<html>
+<title>Colton Howard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides1 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TRAVEL</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Youtube</a>
+        <a href="#" class="w3-bar-item w3-button">Linkedin</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large">RESUME</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TRAVEL</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">MORE</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/NY.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is fantastic.</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A home we won't forget.</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/philly.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Philadelphia</h3>
+      <p><b>Thank you, Philly - For an amazing education.</b></p>
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Colton Howard</h2>
+    <p class="w3-opacity"><i>Travel</i></p>
+    <p class="w3-justify">I have designed this website to track all of my amazing adventures throughout my life, my experiances and act as my personal website.</p>
+    <div class="w3-row w3-padding-32">
+      <!--<div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div> -->
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TRAVEL DATES</h2>
+      <p class="w3-opacity w3-center"><i>Ready to depart!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">May 2017 <span class="w3-tag w3-red w3-margin-left">Canada</span></li>
+        <li class="w3-padding">August 2018 <span class="w3-tag w3-green w3-margin-left"> Ireland</span></li>
+        <li class="w3-padding">August 2019 <span class="w3-tag w3-green w3-margin-left">New Zealand</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/toronto.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+
+            <p><b>Canada (Complete)</b></p>
+            <p class="w3-opacity">May 2017</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Pictures</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/ireland.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Ireland</b></p>
+            <p class="w3-opacity">Aug 2018</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal1').style.display='block'">Pictures</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/newzealand.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New Zealand</b></p>
+            <p class="w3-opacity">Aug 2019</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal1').style.display='block'">Pictures</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canada Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <span onclick="document.getElementById('ticketModal').style.display='none'"
+       class="w3-button w3-teal w3-xlarge w3-display-topright">&times;</span>
+        <h2 class="w3-wide"><i class="fa fa-camera-retro w3-margin-right"></i>Pictures</h2>
+      </header>
+<div class="slideshow-container">
+<div class="mySlides1 fade">
+  <div class="numbertext">1 / 17</div>
+  <img src="images/Canada/IMG_1751.jpg" style="width:100%;height:70%">
+  <div class="text">CN Tower</div>
+</div>
+
+<div class="mySlides1 fade">
+  <div class="numbertext">2 / 17</div>
+  <img src="images/Canada/IMG_1759.png" style="width:100%; height:70%">
+  <div class="text">CN Tower</div>
+</div>
+
+<div class="mySlides1 fade">
+  <div class="numbertext">3 / 17</div>
+  <img src="images/Canada/IMG_1760.png" style="width:100%; height:70%">
+  <div class="text">CN Tower</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">4 / 17</div>
+  <img src="images/Canada/IMG_1758.jpg" style="width:100%; height:70%">
+  <div class="text">CN Tower</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">5 / 17</div>
+  <img src="images/Canada/IMG_1687.jpg" style="width:100%; height:70%">
+  <div class="text">CN Tower</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">6 / 17</div>
+  <img src="images/Canada/IMG_1688.jpg" style="width:100%; height:70%">
+  <div class="text">CN Tower</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">7 / 17</div>
+  <img src="images/Canada/IMG_1738.jpg" style="width:100%; height:70%">
+  <div class="text">CN Tower</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">8 / 17</div>
+  <img src="images/Canada/IMG_1695.jpg" style="width:100%; height:70%">
+  <div class="text">Niagara Falls</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">9 / 17</div>
+  <img src="images/Canada/IMG_1697.jpg" style="width:100%; height:70%">
+  <div class="text">Niagara Falls</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">10 / 17</div>
+  <img src="images/Canada/IMG_1746.png" style="width:100%; height:70%">
+  <div class="text">Niagara Falls</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">11 / 17</div>
+  <img src="images/Canada/IMG_1747.png" style="width:100%; height:70%">
+  <div class="text">Niagara Falls</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">12 / 17</div>
+  <img src="images/Canada/IMG_1763.png" style="width:100%; height:70%">
+  <div class="text">Niagara Falls</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">13 / 17</div>
+  <img src="images/Canada/IMG_1766.png" style="width:100%; height:70%">
+  <div class="text">Niagara Falls</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">14 / 17</div>
+  <img src="images/Canada/IMG_1765.png" style="width:100%; height:70%">
+  <div class="text">Niagara Falls</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">15 / 17</div>
+  <img src="images/Canada/IMG_1764.png" style="width:100%; height:70%">
+  <div class="text">Niagara Falls</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">16 / 17</div>
+  <img src="images/Canada/IMG_1762.png" style="width:100%; height:70%">
+  <div class="text">Niagara Falls Brewing Co.</div>
+</div>
+<div class="mySlides1 fade">
+  <div class="numbertext">17 / 17</div>
+  <img src="images/Canada/IMG_1761.png" style="width:100%; height:70%">
+  <div class="text">Niagara Falls Brewing Co.</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+<span class="dot" onclick="currentSlide(8)"></span>
+<span class="dot" onclick="currentSlide(9)"></span>
+<span class="dot" onclick="currentSlide(10)"></span>
+<span class="dot" onclick="currentSlide(11)"></span>
+<span class="dot" onclick="currentSlide(12)"></span>
+<span class="dot" onclick="currentSlide(13)"></span>
+<span class="dot" onclick="currentSlide(14)"></span>
+<span class="dot" onclick="currentSlide(15)"></span>
+<span class="dot" onclick="currentSlide(16)"></span>
+<span class="dot" onclick="currentSlide(17)"></span>
+
+
+</div>
+      <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1751.jpg">
+      <img src="images/Canada/IMG_1751.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1759.png">
+      <img src="images/Canada/IMG_1759.png" alt="Forest" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1760.png">
+      <img src="images/Canada/IMG_1760.png" alt="Northern Lights" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1758.jpg">
+      <img src="images/Canada/IMG_1758.jpg" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1687.jpg">
+      <img src="images/Canada/IMG_1687.jpg" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1688.jpg">
+      <img src="images/Canada/IMG_1688.jpg" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1738.jpg">
+      <img src="images/Canada/IMG_1738.jpg" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1695.jpg">
+      <img src="images/Canada/IMG_1695.jpg" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1697.jpg">
+      <img src="images/Canada/IMG_1697.jpg" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1746.png">
+      <img src="images/Canada/IMG_1746.png" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1747.png">
+      <img src="images/Canada/IMG_1747.png" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1763.png">
+      <img src="images/Canada/IMG_1763.png" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1766.png">
+      <img src="images/Canada/IMG_1766.png" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1765.png">
+      <img src="images/Canada/IMG_1765.png" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1764.png">
+      <img src="images/Canada/IMG_1764.png" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1762.png">
+      <img src="images/Canada/IMG_1762.png" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Canada/IMG_1761.png">
+      <img src="images/Canada/IMG_1761.png" alt="Mountains" width="600" height="400">
+    </a>
+
+  </div>
+</div>
+<div class="clearfix"></div>
+      <div class="w3-container">
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other Modal -->
+  <div id="ticketModal1" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <span onclick="document.getElementById('ticketModal1').style.display='none'"
+       class="w3-button w3-teal w3-xlarge w3-display-topright">&times;</span>
+        <h2 class="w3-wide"><i class="fa fa-camera-retro w3-margin-right"></i>Pictures</h2>
+      </header>
+      <div class="clearfix"></div>
+            <div class="w3-container">
+              <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal1').style.display='none'">Close <i class="fa fa-remove"></i></button>
+              <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+            </div>
+          </div>
+        </div>
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: (817)455-6996<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: coltr.howard@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHNW_Lpuw1_F72h-pOp0OPTfTNy64-8ls&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/colton.howard.927"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/coltr7/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <a href="https://www.pinterest.com/coltrhoward7/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <a href="https://www.linkedin.com/in/colton-howard-3b35b990"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <p class="w3-medium">@Howard </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
