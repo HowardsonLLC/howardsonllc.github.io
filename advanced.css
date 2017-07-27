@@ -208,3 +208,21 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-white,.w3-hover-border-white:hover{border-color:#fff!important}
 .w3-border-black,.w3-hover-border-black:hover{border-color:#000!important}
 .w3-border-grey,.w3-hover-border-grey:hover,.w3-border-gray,.w3-hover-border-gray:hover{border-color:#bbb!important}
+.btn:hover{background-color: #ccc; color: #000 !important;}
+.btn-clear-white {
+    text-transform: uppercase;
+    background: none;
+    border-radius: 0px;
+    color: #fff !important;
+    text-shadow: none !important;
+    margin-top: 20px;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    padding: 12px 24px 11px 24px;
+    min-height: 32px;
+    text-align: center !important;
+    vertical-align: middle !important;
+    min-width: 150px;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+}
