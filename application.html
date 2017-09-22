@@ -184,101 +184,160 @@ div.desc {
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/infpool.jpg" style="width:100%; height:60%;">
-    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h1 style="font-size: 450%; color: #fff;">Madison, WI</h1>
+  <div class=" w3-display-container w3-center">
+    <form action="/">
 
-      <a href="http://www.google.com" style="text-decoration:none;" class="btn btn-clear-white"> Begin Application</a>
+      <legend>Howardson Application</legend>
+
+      <label for="name">Name: </label>
+      <input type="text" value="Name" name="Name" />
+
+      <label for="email">Email: </label>
+      <input type="email" value="Email" name="Email" />
+
+      <label>Button: </label>
+      <input type="button" value="Button" name="button" />
+
+      <label>Single Checkbox:
+      <input type="checkbox" value="checkbox1" name="button" /></label>
+
+      <fieldset>
+          <legend>Group of Checkboxes: </legend>
+          <label>Checkbox 1:
+              <input type="checkbox" value="checkbox1" name="checkgroup[]" /></label>
+          <label>Checkbox 2:
+              <input type="checkbox" value="checkbox2" name="checkgroup[]" /></label>
+          <label>Checkbox 3:
+              <input type="checkbox" value="checkbox3" name="checkgroup[]" /></label>
+          <label>Checkbox 4:
+              <input type="checkbox" value="checkbox4" name="checkgroup[]" /></label>
+      </fieldset>
+
+      <label>Color: </label>
+      <input type="color" value="color" name="color" />
+
+      <label>Date: </label>
+      <input type="date" value="date" name="date" />
+
+      <label>Date, Time (Local): </label>
+      <input type="datetime-local" value="datetime" name="datetime" />
+
+      <label>File: </label>
+      <input type="file" value="file" name="file" />
+
+      <input type="hidden" value="hidden" name="hidden" />
+
+      <label>Image: </label>
+      <input type="image" value="image" name="image" />
+
+      <label>Month: </label>
+      <input type="month" value="month" name="month" />
+
+      <label>Number: </label>
+      <input type="number" value="number" name="number" />
+
+      <label>Password: </label>
+      <input type="password" value="password" name="password" />
+
+      <label>Single Radio:
+      <input type="radio" value="radio" name="radio" /></label>
+
+      <fieldset>
+          <legend>Group of Radios: </legend>
+          <label>Radio 1:
+              <input type="radio" value="radio1" name="radiogroup" /></label>
+          <label>Radio 2:
+              <input type="radio" value="radio2" name="radiogroup" /></label>
+          <label>Radio 3:
+              <input type="radio" value="radio3" name="radiogroup" /></label>
+          <label>Radio 4:
+              <input type="radio" value="radio4" name="radiogroup" /></label>
+      </fieldset>
+
+      <label>Range: </label>
+      <input type="range" value="range" name="range" />
+
+      <label>Reset: </label>
+      <input type="reset" value="reset" name="reset" />
+
+      <label>Time: </label>
+      <input type="time" value="time" name="time" />
+
+      <label>Search: </label>
+      <input type="search" value="search" name="search" />
+
+      <label>Tel: </label>
+      <input type="tel" value="tel" name="tel" />
+
+      <label>Text: </label>
+      <input type="text" value="text" name="text" />
+
+      <label>URL: </label>
+      <input type="url" value="url" name="url" />
+
+      <label>Week: </label>
+      <input type="week" value="week" name="week" />
+
+      <button>This is a button!</button>
+
+      <label>Select 1: </label>
+      <select name="select" size="1">
+          <option>Test</option>
+          <option>Test</option>
+      </select>
+
+      <label>Select 2: </label>
+      <select name="select1" size="3">
+          <option>Test</option>
+          <option>Test</option>
+      </select>
+
+      <label>Select Multiple: </label>
+      <select name="select2" size="3" multiple>
+          <option>Test</option>
+          <option>Test</option>
+      </select>
+
+      <label>Select Groups: </label>
+      <select name="select3" size="1" multiple>
+          <optgroup label="First Group">
+              <option>Test</option>
+              <option>Test</option>
+          </optgroup>
+          <optgroup label="Second Group">
+              <option>Test</option>
+              <option>Test</option>
+          </optgroup>
+          <optgroup label="Third Group">
+              <option>Test</option>
+              <option>Test</option>
+          </optgroup>
+      </select>
+
+      <fieldset>
+          <legend>Datalist: </legend>
+          <input type="text" name="datalist" list="samplelist">
+          <datalist id="samplelist">
+              <option>Something</option>
+              <option>Something else</option>
+              <option>Another thing</option>
+          </datalist>
+      </fieldset>
+
+      <label>A textarea!</label>
+      <textarea name="textarea">A paragraph in here</textarea>
+
+      <label>Progress (very unsupported): </label>
+      <progress value="20" max="100"></progress>
+
+      <label>Meter (very unsupported): </label>
+      <meter min="0" value="20" max="100" low="10" high="90" optimum="80">20 in the meter</meter>
+
+      <input type="submit" value="GO" />
+
+  </form>
     </div>
   </div>
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">Photos of Our Beautiful Apartments</h2>
-    <div class="w3-content w3-display-container">
-    <img class="mySlides1" src="images/contemporary-living-room-ideas-white-sofa-cushions-pouf-table-wooden-table-table-lamp-floor-brown-curtain-window-ceiling-lights.jpeg" style="width:100%">
-    <img class="mySlides1" src="images/One-Bedroom-Modern-Apartment_1.jpg" style="width:100%">
-    <img class="mySlides1" src="images/One-Bedroom-Modern-Apartment_2.jpg" style="width:100%">
-    <img class="mySlides1" src="images/ireland.jpg
-    " style="width:100%">
-
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-  </div>
-</div>
-    <div class="w3-row w3-padding-32">
-      <!--<div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div> -->
-    </div>
-  </div>
-
-  <!-- The Tour Section -->
-  <div class="w3-black w3-center" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Floor Plans</h2>
-      <img src="images/floorplan.jpg" style="height:50%;">
-    </div>
-    <a href="http://www.google.com" style="text-decoration:none;" class="btn btn-clear-white"> Begin Application</a>
-<br></br>
-  </div>
-
-
-
-  <!-- Other Modal -->
-  <div id="ticketModal1" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32">
-        <span onclick="document.getElementById('ticketModal1').style.display='none'"
-       class="w3-button w3-teal w3-xlarge w3-display-topright">&times;</span>
-        <h2 class="w3-wide"><i class="fa fa-camera-retro w3-margin-right"></i>Pictures</h2>
-      </header>
-      <div class="clearfix"></div>
-            <div class="w3-container">
-              <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal1').style.display='none'">Close <i class="fa fa-remove"></i></button>
-              <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-            </div>
-          </div>
-        </div>
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Interested in an Apartment? Email us!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m7 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: (817)455-6996<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: Colton.Howard@howardsonproperties.com<br>
-      </div>
-      <div class="w3-col m5">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-<!-- End Page Content -->
-</div>
 
 
 <!-- Footer -->
